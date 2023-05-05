@@ -24,7 +24,7 @@ In addition, **copy-in-copy-out** (CICO) data transportation can be used for mes
 * Lock free synchronization
   VHX does not rely on locks or atomic function to achieve synchronization between processes. Instead it utilizes a single writer-many readers scheme for the handling of control variables
   
-*Data Pipeling (TODO)
+* Data Pipeling (TODO)
 
 VHX will also be able to allow concurrent (in terms of hierarchy) transfer of data  with the use of data pipelining.
 
