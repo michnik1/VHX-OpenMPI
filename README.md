@@ -19,7 +19,7 @@ VHX supports **zero-copy** data transfer (specifically XPMEM, currently in a deb
         -Implementd using OPAL's Registration Cache to improve performance
         -Generally used for data large message sizes (can be configured)
 
-In addition, **copy-in-copy-out** (CICO) data transportation can be used for messgaes of smaller sizes or when XPMEME is not available
+In addition, **copy-in-copy-out** (CICO) data transportation can be used for messages of smaller sizes or when XPMEM is not available
 
 * Lock free synchronization
   VHX does not rely on locks or atomic function to achieve synchronization between processes. Instead it utilizes a single writer-many readers scheme for the handling of control variables
@@ -47,3 +47,11 @@ When built, VHX should be a candidate betweeen other existing collective compone
    `mpirun -np 32  --mca coll basic,libnbc,vhx ----mca coll_vhx_priority 100 ./executable_name`
  
  
+ 
+ ##  Acknowledgments
+
+We thankfully acknowledge the support of the European Commission and the Greek
+General Secretariat for Research and Innovation under the EuroHPC Programme
+through the **The European-PILOT** project (GA 101034126). National contributions from the
+involved state members (including the Greek General Secretariat for Research
+and Innovation) match the EuroHPC funding.
